@@ -1,0 +1,164 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Pertama Saya | Anas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+  </head>
+  <body>
+    <nav class="navbar bg-secondary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Anas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#about">About Me</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#galeri">Galeri</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#kontak">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- akhir Navbar -->
+ <section class="jumbotron mt-5" id="home">
+  <div class="container text-center">
+   <!-- untuk gambar bebas -->
+   <img class="rounded img-thumbnail mt-5" src="{% static "anas.jpg"%}" width="200">
+   <h1 class="display-4">Anas</h1>
+   <p class="lead">Student | Web Development</p>
+  </div>
+  </section>
+<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#002bdc88"></stop><stop offset="95%" stop-color="#32ded488"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,133 0,133 C 85.96428571428572,153.14285714285714 171.92857142857144,173.28571428571428 309,169 C 446.07142857142856,164.71428571428572 634.25,136 780,119 C 925.75,102 1029.0714285714287,96.71428571428571 1132,101 C 1234.9285714285713,105.28571428571429 1337.4642857142858,119.14285714285714 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#002bdcff"></stop><stop offset="95%" stop-color="#32ded4ff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 143.5,246.25 287,226.5 405,220 C 523,213.5 615.4999999999999,220.25 736,242 C 856.5000000000001,263.75 1005,300.5 1127,307 C 1249,313.5 1344.5,289.75 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+ <!-- Akhir Jumbotron -->
+  <section class="about mt-5" id="about">
+  <div class="container">
+   <div class="row">
+    <div class="col text-center">
+     <h2>About</h2>
+     <hr>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md text-justify">
+     <p>Tetaplah pada prinsip benar menurutmu dan jangan biarkan orang lain memengaruhinya karena mereka belum tentu benar.</p>
+    </div>
+    <div class="col-md text-justify">
+     <p>Jangan takut untuk berkata 'tidak' pada sesuatu yang tidak sesuai dengan nilai dan prinsip hidupmu.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- Akhir About -->
+ <section class="galeri" id="galeri">
+ 				<div class="container">
+ 								<div class="row">
+ 												<div class="col text-center">
+ 																<h2>Galeri</h2>			
+ 												</div>
+ 								</div>
+ 				</div>
+ 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "slide.jpg"%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "slide.jpg"%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "slide.jpg"%}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#002bdc88"></stop><stop offset="95%" stop-color="#32ded488"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,133 0,133 C 132.21428571428572,137.21428571428572 264.42857142857144,141.42857142857142 392,136 C 519.5714285714286,130.57142857142858 642.5,115.50000000000001 738,103 C 833.5,90.49999999999999 901.5714285714284,80.57142857142857 1014,86 C 1126.4285714285716,91.42857142857143 1283.2142857142858,112.21428571428572 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#002bdcff"></stop><stop offset="95%" stop-color="#32ded4ff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 128.25,268.6071428571429 256.5,271.2142857142857 389,255 C 521.5,238.78571428571428 658.2500000000001,203.75 777,217 C 895.7499999999999,230.25 996.5,291.7857142857143 1104,308 C 1211.5,324.2142857142857 1325.75,295.1071428571429 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path></svg>
+ </section>
+<!-- contact -->
+<section class="contact" id="kontak">
+  <div class="container">
+   <div class="row py-4">
+    <div class="col text-center">
+     <h2>Contact Me</h2>
+     <hr>
+    </div>
+   </div>
+   <div class="row justify-content-center">
+    <div class="col-sm-8">
+     <form>
+      <!-- Name -->
+      <div class="form-group">
+       <label for="name"><strong>Nama</strong></label> <input autocomplete="off" class="form-control" id="name" placeholder="Masukkan Nama Anda" type="text">
+      </div><!-- Email -->
+      <div class="form-group">
+       <label for="email"><strong>Email</strong></label> <input autocomplete="off" class="form-control" id="email" placeholder="Masukkan Email" type="email">
+      </div><!-- Telephone -->
+      <div class="form-group">
+       <label for="phone"><strong>Nomor Handphone</strong></label> <input autocomplete="off" class="form-control" id="phone" placeholder="Masukkan Nomor Handphone" type="number">
+      </div><!-- Choose Category -->
+     
+      </div><!-- Message -->
+      <div class="form-group">
+       <label for="message">Pesan</label> 
+       <textarea class="form-control" id="message" placeholder="Sampaikan keperluan anda di sini" rows="4"></textarea>
+      </div>
+      <br><!-- Button -->
+      <button class="btn btn-dark btn-success">Kirim</button>
+     </form>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- Akhir kontak -->
+ <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#002bdc88"></stop><stop offset="95%" stop-color="#32ded488"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,133 0,133 C 132.85714285714286,113.78571428571428 265.7142857142857,94.57142857142857 384,89 C 502.2857142857143,83.42857142857143 605.9999999999999,91.5 721,101 C 836.0000000000001,110.5 962.2857142857144,121.42857142857142 1084,127 C 1205.7142857142856,132.57142857142858 1322.8571428571427,132.78571428571428 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#002bdcff"></stop><stop offset="95%" stop-color="#32ded4ff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 102.42857142857142,278.0357142857143 204.85714285714283,290.07142857142856 347,282 C 489.14285714285717,273.92857142857144 671,245.75000000000006 786,245 C 901,244.24999999999994 949.1428571428573,270.9285714285714 1047,279 C 1144.8571428571427,287.0714285714286 1292.4285714285713,276.53571428571433 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+ <!-- footer -->
+ 
+  <footer class="bg-secondary text-white">
+  <div class="container">
+   <div class="row">
+    <div class="col text-center pt-3">
+     <p>Copyright & copy; Anas 2022.</p>
+    </div>
+   </div>
+  </div>
+ </footer><!-- Akhir Footer -->
+ <!-- Akhir footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
